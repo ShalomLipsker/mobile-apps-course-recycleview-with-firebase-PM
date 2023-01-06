@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/recycleViewFragment">
+
+    <fragment
+        android:id="@+id/detailsPage"
+        android:name="com.example.recycleviewwithfirebase.DetailsPage"
+        android:label="fragment_details_page"
+        tools:layout="@layout/fragment_details_page">
+        <argument
+            android:name="cardName"
+            app:argType="com.example.recycleviewwithfirebase.DataModel" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recycleViewFragment"
+        android:name="com.example.recycleviewwithfirebase.RecycleViewFragment"
+        android:label="fragment_recycle_view"
+        tools:layout="@layout/fragment_recycle_view">
+        <action
+            android:id="@+id/action_recycleViewFragment_to_detailsPage"
+            app:destination="@id/detailsPage" />
+    </fragment>
+
+
+</navigation>

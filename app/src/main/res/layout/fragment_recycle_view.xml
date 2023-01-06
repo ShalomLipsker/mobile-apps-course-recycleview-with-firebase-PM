@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".RecycleViewFragment">
+
+
+    <TextView
+        android:id="@+id/mainListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:text="ראשי ממשלה בישראל"
+        android:textColor="#251E4C"
+        android:textSize="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewMain"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
